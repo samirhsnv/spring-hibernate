@@ -42,7 +42,6 @@ public class Main {
         service.saveMessage(message);
         service.saveMessage(message_);
         
-        List<Message> messages = service.findMessagesByUser(samir);
-        System.out.println(messages);
+        service.findMessagesByUser(samir).forEach(System.out::println);
     }
 }
